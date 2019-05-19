@@ -1,0 +1,19 @@
+{
+  "name": "subbotinatattoo.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/subbotinatattoo/subbotinatattoo.github.io.git",
+  "author": "Roman Volobuiev",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/*.html",
+    "dev": "parcel ./src/*.html",
+    "prod": "parcel build ./src/*.html --out-dir ."
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "sass": "^1.20.1"
+  }
+}
