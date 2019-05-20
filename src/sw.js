@@ -1,17 +1,5 @@
 const cacheName = "cache-v1";
-const precacheResources = [
-  "/",
-  "index.html",
-  "js/script.js",
-  "images/favicon.ico",
-  "*.jpg",
-  "*.css",
-  "*.woff",
-  "*.eot",
-  "*.ttf",
-  "*.svg",
-  "*.woff2"
-];
+const precacheResources = ["/", "index.html"];
 
 self.addEventListener("install", event => {
   console.log("Service worker installing...");
