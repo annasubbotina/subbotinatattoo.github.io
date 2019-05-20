@@ -1,6 +1,6 @@
 # Logs
 .cache
-.dist
+dist
 logs
 *.log
 npm-debug.log*

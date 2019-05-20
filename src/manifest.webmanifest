@@ -1,0 +1,45 @@
+{
+  "name": "Subbotina Tattoo",
+  "short_name": "Subbotina Tattoo",
+  "start_url": "/",
+  "scope": ".",
+  "display": "fullscreen",
+  "background_color": "#2E2D2E",
+  "theme_color": "#2E2D2E",
+  "description": "Subbotina Tattoo",
+  "dir": "ltr",
+  "lang": "ru",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./images/bg_icon.jpg",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/bg_icon.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/bg_icon.jpg",
+      "sizes": "248x248",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/bg_icon.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/bg_icon.jpg",
+      "sizes": "168x168",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/bg_icon.jpg",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
