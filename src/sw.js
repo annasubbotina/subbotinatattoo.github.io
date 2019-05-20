@@ -2,9 +2,15 @@ const cacheName = "cache-v1";
 const precacheResources = [
   "/",
   "index.html",
-  "styles/main.css",
-  "js/",
-  "images/"
+  "js/script.js",
+  "images/favicon.ico",
+  "*.jpg",
+  "*.css",
+  "*.woff",
+  "*.eot",
+  "*.ttf",
+  "*.svg",
+  "*.woff2"
 ];
 
 self.addEventListener("install", event => {
