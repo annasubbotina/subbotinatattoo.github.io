@@ -15,11 +15,17 @@ function filterOwner(array) {
   });
 }
 
+const sizes = [150, 240, 320, 480, 640];
+const { innerWidth } = window;
+const minSize = (innerWidth / 3) | 0;
+const n = sizes.findIndex(s => s >= minSize);
+const num = n === -1 ? 4 : n;
+
 function deriveSrc(array) {
   return array
     .map(({ node }) => ({
       url: node.shortcode,
-      src: get(node, "thumbnail_resources.0.src")
+      src: get(node, `thumbnail_resources.${num}.src`)
     }))
     .filter(Boolean);
 }
@@ -50,7 +56,7 @@ const first = 20;
 
 const feed = document.getElementById("feed");
 
-const src = `https://www.instagram.com/graphql/query/?query_hash=f92f56d47dc7a55b606908374b43a314&variables=%7B%22tag_name%22%3A%22subbotinatattoo%22%2C%22first%22%3A12%2C%22after%22%3A%22QVFCSXpvSFhSNnJQeHJ6WHRyOXpIUVZOdDljdUE0U1V0cloybFR4bnozR29zakZnTlh5R2xhM0dzaEVOUmVYekVCSXRHSlBMY2dha1Fwbl9RR3d5WkFXNQ%3D%3D%22%7D`;
+const src = `https://www.instagram.com/graphql/query/?query_hash=f92f56d47dc7a55b606908374b43a314&variables=%7B%22tag_name%22%3A%22subbotinatattoo%22%2C%22first%22%3A12%2C%22after%22%3A%22QVFDNGswYVoyUjEycnZGaTROc09CcEcyU1VDS0tBdm9QR3F1WUhMQWhWWmlRRG1SdzFkeWpOaDFVbjdWTFpIZ2V5dHJKVlRfRnd2clRwR1FmUkFqdUdUUQ%3D%3D%22%7D`;
 
 fetch(src)
   .then(res => {
